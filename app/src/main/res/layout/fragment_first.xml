@@ -31,13 +31,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:background="@color/buttonBackground"
         android:text="@string/random_button_text"
         android:textColor="@color/white"
         android:textSize="14sp"
-        android:background="@color/buttonBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/toast_button"
@@ -49,17 +50,32 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonBackground"
+        android:text="@string/next_button_text"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/random_button"
+        app:layout_constraintStart_toEndOf="@+id/toast_button"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/count_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/buttonBackground"
         android:text="@string/count_button_text"
         android:textColor="@color/white"
-        android:background="@color/buttonBackground"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/random_button"
-        app:layout_constraintStart_toEndOf="@+id/toast_button"
-        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next_button"
+        tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
