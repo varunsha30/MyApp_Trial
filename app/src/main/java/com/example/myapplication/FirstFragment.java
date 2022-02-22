@@ -16,7 +16,6 @@ import com.example.myapplication.databinding.FragmentFirstBinding;
 public class FirstFragment extends Fragment {
 
     TextView showCountTextView;
-
     private FragmentFirstBinding binding;
 
     @Override
@@ -38,6 +37,8 @@ public class FirstFragment extends Fragment {
 
 
     }
+
+
 
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
